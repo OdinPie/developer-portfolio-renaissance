@@ -5,6 +5,7 @@ import { useState } from "react";
 import Home from "./Home/Home";
 import Hidden from "./Home/Hidden";
 import About from "./About/About";
+import Projects from "./Projects/Projects";
 function App() {
   const [date,month] = currentTime();
   const [hovering, setHovering] = useState(false);
@@ -27,7 +28,7 @@ function App() {
       }}></AnimatedCursor>
       <Hidden></Hidden>
       <Home></Home>
-
+      <Projects></Projects>
     </div>
   )
 }
