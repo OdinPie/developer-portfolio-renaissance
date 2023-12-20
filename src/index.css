@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: #000;
+}
+
+
+.app{
+  background-image: url('https://i.imgur.com/vBzELuL.jpeg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: clipPath 2s;
+  transition: ease-in-out 2s ;
+  z-index: 1;
+}
+
+.enterTransition{
+  background-image: url('https://i.imgur.com/vBzELuL.jpeg'); 
+  /* background-image: url('https://i.imgur.com/8PfD13s.jpeg');  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: clipPathReverse 2s forwards;
+  transition: ease-in-out 2s ;
+}
+
+html{
+  --cursor-color: #ffffff;
+  background: #000;
+  background-attachment: fixed;
+}
+
+.headerText{
+  transform: translateY(300px);
+  animation: slideUp 2s forwards;
+  animation-delay: 2s;
+}
+
+.navbar{
+  transform: translateY(-300px);
+  animation: slidedown 2s forwards;
+  animation-delay: 2.5s;
+}
+
+.paragraphText{
+  animation: diagonalMotion 2s forwards;
+  animation-delay: 1s;
+}
+
+.hiddenText{
+  animation: bgText ;
+  animation-duration: 10s;
+}
+
+@keyframes diagonalMotion{
+  0%{
+    opacity: 0;
+    transform: translateX(-200) translateY(-100) rotateX('90deg');
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+}
+@keyframes bgText{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
+@keyframes clipPath {
+  0%{
+    clip-path: polygon(60% 0%, 70% 50%, 60% 100%, 50% 50%);
+  }
+  100%{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+  }
+}
+@keyframes clipPathReverse {
+  0%{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+  }
+  100%{
+    clip-path: polygon(60% 0%, 70% 50%, 60% 100%, 50% 50%);
+    
+  }
+}
+
+@keyframes slideUp {
+  
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
