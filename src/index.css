@@ -17,6 +17,21 @@ body{
   transition: ease-in-out 2s ;
   z-index: 1;
 }
+.overlay{
+  background: rgba(22, 21, 21, 0.411);
+  inset: 0;
+  position: absolute;
+}
+.modalBack{
+  background-image: url('https://i.imgur.com/vBzELuL.jpeg'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.motionTrans{
+  transition: ease-in-out 2s;
+  transition-delay: 2s;
+}
 
 .enterTransition{
   background-image: url('https://i.imgur.com/vBzELuL.jpeg'); 

@@ -34,7 +34,7 @@ const Projects = () => {
     }
     return (
         <div className='pt-44 text-textPrimary relative ml-20'>
-            <img src={clock} className='h-96 absolute top-100 right-0' alt="" />
+            <img src={clock} className='h-96 lg:h-[500px] absolute top-100 right-0' alt="" />
             <div>
                 <div className='flex'>
                 <img className="h-7" src="https://i.imgur.com/C5rx7Ev.png" alt="" />

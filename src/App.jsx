@@ -6,6 +6,7 @@ import Home from "./Home/Home";
 import Hidden from "./Home/Hidden";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
+import TouchingHands from "./TouchingHands/TouchingHands";
 function App() {
   const [date,month] = currentTime();
   const [hovering, setHovering] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       <Hidden></Hidden>
       <Home></Home>
       <Projects></Projects>
+      <TouchingHands></TouchingHands>
     </div>
   )
 }
