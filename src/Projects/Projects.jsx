@@ -33,7 +33,7 @@ const Projects = () => {
         setIsOpennn(false);
     }
     return (
-        <div className='pt-44 text-textPrimary relative ml-20'>
+        <div id='projects' className='pt-44 text-textPrimary relative ml-20'>
             <img src={clock} className='h-96 lg:h-[500px] absolute top-100 right-0' alt="" />
             <div>
                 <div className='flex'>
