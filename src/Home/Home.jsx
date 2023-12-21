@@ -13,7 +13,7 @@ const Home = () => {
     const scrollPosition = window.scrollY;
     const scrollOpacity = 1- Math.min(scrollPosition/500,1);
     setbackGround(scrollOpacity);
-    console.log("pos: ",scrollPosition, "opacity: ",scrollOpacity);
+    // console.log("pos: ",scrollPosition, "opacity: ",scrollOpacity);
     
     
   }
