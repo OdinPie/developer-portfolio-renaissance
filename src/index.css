@@ -72,6 +72,19 @@ html{
   animation-duration: 10s;
 }
 
+.model{
+  animation: modelbounce 3s infinite;
+}
+
+@keyframes modelbounce{
+  0%, 100%{
+    transform: translateY(5%);
+  }
+  50%{
+    transform: translateY(0);
+  }
+}
+
 @keyframes diagonalMotion{
   0%{
     opacity: 0;

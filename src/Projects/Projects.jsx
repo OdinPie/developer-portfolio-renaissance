@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import clock from '../assets/clock.png'
 import agun_pic from '../../src/assets/agun_pic.png'
 import bdbn_pic from '../../src/assets/bdbn_pic.png'
-import glossy_pic from '../../src/assets/glossy_pic.png'
+import weave from '../../src/assets/weave.png'
 import FirstModal from './firstModal';
 import SecondModal from './secondModal';
 import ThirdModal from './thirdModal';
@@ -34,25 +34,38 @@ const Projects = () => {
     }
     return (
         <div id='projects' className='pt-44 text-textPrimary relative ml-20'>
-            <img src={clock} className='h-96 lg:h-[500px] absolute top-100 right-0' alt="" />
-            <div>
+            <img src={clock} className='h-96 lg:h-[500px] absolute top-100 right-0 hidden lg:flex' alt="" />
+            <div className='overflow-hidden'>
                 <div className='flex'>
                 <img className="h-7" src="https://i.imgur.com/C5rx7Ev.png" alt="" />
                 <h1 className='font-TulpenOne font-bold text-5xl'>Selected Projects</h1>
                 </div>
 
                 <div className='py-20 max-w-4xl mx-auto'>
-                    <div className='flex items-center gap-9 my-10'>
-                    <div>
-                    <h1 className='font-TulpenOne font-bold text-7xl'>Agun News</h1>
-                    <p className='font-AbrilFatface font-bold text-xl text-right -m-3 text-error'>News Website</p>
-                    </div>
+
+                <div className='flex items-center gap-9 my-10'>
+                   
+                   <div className='overflow-hidden'>
+                   <img onClick={openModalll}  onMouseEnter={()=>{setHoveringgg(true)}} onMouseLeave={()=>{setHoveringgg(false)}} style={{width: "300px", height: "150px", transition: '0.5s ease-in-out'}} className={hoveringgg? "scale-110": "scale-100"} src={weave} alt="" />
+                   </div>
+                   <div >
+                   <h1 className='font-TulpenOne font-bold text-7xl'>WeavePDF</h1>
+                   <p className='font-AbrilFatface font-bold text-xl -m-3 text-error'>PDF editing tool website</p>
+                   </div>
+                   </div>
+
+                    <div className='flex items-center gap-9 my-10 justify-center'>
+                    
                     <div className='overflow-hidden'>
                     <img onClick={openModal}  onMouseEnter={()=>{setHovering(true)}} onMouseLeave={()=>{setHovering(false)}} style={{width: "300px", height: "150px", transition: '0.5s ease-in-out'}} className={hovering? "scale-110": "scale-100"} src={agun_pic} alt="" />
                     </div>
+                    <div >
+                    <h1 className='font-TulpenOne font-bold text-7xl'>Agun News</h1>
+                    <p className='font-AbrilFatface font-bold text-xl text-right -m-3 text-error'>News Website</p>
+                    </div>
                     </div>
 
-                    <div className='flex items-center gap-9 my-10'>
+                    <div className='flex items-center gap-9 my-10 justify-end'>
                    
                     <div className='overflow-hidden'>
                     <img onClick={openModall} onMouseEnter={()=>{setHoveringg(true)}} onMouseLeave={()=>{setHoveringg(false)}} style={{width: "300px", height: "150px", transition: '0.5s ease-in-out'}} className={hoveringg? "scale-110": "scale-100"} src={bdbn_pic} alt="" />
@@ -63,16 +76,7 @@ const Projects = () => {
                     </div>
                     </div>
 
-                    <div className='flex items-center gap-9 my-10 justify-end'>
-                   
-                    <div className='overflow-hidden'>
-                    <img onClick={openModalll}  onMouseEnter={()=>{setHoveringgg(true)}} onMouseLeave={()=>{setHoveringgg(false)}} style={{width: "300px", height: "150px", transition: '0.5s ease-in-out'}} className={hoveringgg? "scale-110": "scale-100"} src={glossy_pic} alt="" />
-                    </div>
-                    <div>
-                    <h1 className='font-TulpenOne font-bold text-7xl'>Glossy Guru</h1>
-                    <p className='font-AbrilFatface font-bold text-xl -m-3 text-error'>Skincare review platform</p>
-                    </div>
-                    </div>
+                    
                 </div>
 
             </div>

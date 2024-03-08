@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 import backArrow from '../../src/assets/backArrow.png'
-import glossy_pic from '../../src/assets/glossy_pic.png'
+import weave from '../../src/assets/weave.png'
 import express from '../../src/assets/express.png'
 const ThirdModal = ({isOpen, onRequestClose}) => {
     Modal.setAppElement('#root');
@@ -27,18 +27,23 @@ const ThirdModal = ({isOpen, onRequestClose}) => {
             <div className="overlay"></div>
 
         <div className='flex gap-5 absolute'>
-            <div>
+            <div className='hidden md:flex flex-col'>
             <img onClick={onRequestClose} className='w-24 opacity-100' src={backArrow} alt="" />
             <div className='px-10'>
-                    <h1 className='font-TulpenOne font-bold text-7xl'>Glossy Guru</h1>
-                    <p className='font-AbrilFatface font-bold text-xl pl-12 -m-3 text-error'>Skincare Review Platform</p><br /><br />
+                    <h1 className='font-TulpenOne font-bold text-7xl'>WeavePDF</h1>
+                    <p className='font-AbrilFatface font-bold text-xl pl-12 -m-3 text-error'>PDF editing Platform</p><br /><br />
                     <p className='font-AbrilFatface font-bold text-xl'>Features : </p>
                     <ul className='pl-10 text-textPrimary font-semibold'>
-                        <li type='circle'>Authentication using firebase</li>
-                        <li type='circle'>Add products</li>
-                        <li type='circle'>Update products</li>
-                        <li type='circle'>Add items to cart</li>
-                        <li type='circle'>Delete products</li>
+                        <li type='circle'>Digital payment gateway</li>
+                        <li type='circle'>Merge & Split PDFs</li>
+                        <li type='circle'>PDF to Audiobook</li>
+                        <li type='circle'>Edit pdf (add text, highlight, add watermark, images, signatures, , rotate pdf )</li>
+                        <li type='circle'>Word to PDF, Markdown to PDF</li>
+                        <li type='circle'>Speech to text, Image to pdf, draw signature</li>
+                        <li type='circle'>Add watermark and page number</li>
+                        <li type='circle'>Todo List, Messenget chat</li>
+                        <li type='circle'>User dashboard</li>
+                        <li type='circle'>Admin dashboard</li>
              
                         and many more!
                         
@@ -47,10 +52,10 @@ const ThirdModal = ({isOpen, onRequestClose}) => {
             </div>
             </div>
             <div className='flex flex-col justify-center items-center gap-14'>
-                <img className='h-[200px] w-[400px]' src={glossy_pic} alt="" />
+                <img className='h-[200px] w-[400px]' src={weave} alt="" />
                 <div className='flex gap-10'>
-                    <a href="https://cosmetics-server-5aa92.web.app/"><button className='btn'>Live Site</button></a>
-                    <a href="https://github.com/OdinPie/cosmetics-review-website"><button className='btn'>Source Code</button></a>
+                    <a href="https://curious-dragon-bfb4a4.netlify.app"><button className='btn'>Live Site</button></a>
+                    <a href="https://github.com/Md-Rakib-Hassan/WeavePDF"><button className='btn'>Source Code</button></a>
                 </div>
                 <div className='flex gap-2'>
                     <img className='h-10' src="https://symbols.getvecta.com/stencil_25/72_react.76a8d36b4b.svg" alt="" />
@@ -61,7 +66,7 @@ const ThirdModal = ({isOpen, onRequestClose}) => {
                     <img className='h-10' src={express} alt="" />
                     <img className='h-10' src="https://symbols.getvecta.com/stencil_261/25_mongodb.cef7d00b8a.svg" alt="" />
                     <img className='h-10' src="https://symbols.getvecta.com/stencil_3/3_firebase.39b6ba3587.svg" alt="" />
-                </div>
+                </div><div className="btn bg-neutral-700" onClick={onRequestClose}>Back</div>
             </div>
         </div>
        

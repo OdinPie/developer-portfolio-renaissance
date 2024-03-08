@@ -30,9 +30,9 @@ const Home = () => {
         changeBackground()
         window.addEventListener("scroll",changeBackground);
 
-        // return()=>{
-        // window.removeEventListener("scroll",changeBackground);
-        // }
+        return()=>{
+        window.removeEventListener("scroll",changeBackground);
+        }
   },[])
     return (
         <div style={{opacity : background, transition : 'ease-in-out 0.05s'}} className={hovering? "enterTransition text-textPrimary absolute w-full top-0" : "app text-textPrimary absolute w-full top-0"}>

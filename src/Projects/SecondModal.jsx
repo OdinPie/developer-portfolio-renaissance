@@ -29,7 +29,7 @@ const SecondModal = ({isOpen, onRequestClose}) => {
             <div className="overlay"></div>
 
         <div className='flex gap-5 absolute'>
-            <div>
+            <div  className='hidden md:flex flex-col'>
             <img onClick={onRequestClose} className='w-24 opacity-100' src={backArrow} alt="" />
             <div className='px-10'>
                     <h1 className='font-TulpenOne font-bold text-7xl'>Boi De Boi Ne</h1>
@@ -65,6 +65,7 @@ const SecondModal = ({isOpen, onRequestClose}) => {
                     <img className='h-10' src="https://symbols.getvecta.com/stencil_261/25_mongodb.cef7d00b8a.svg" alt="" />
                     <img className='h-10' src="https://symbols.getvecta.com/stencil_3/3_firebase.39b6ba3587.svg" alt="" />
                 </div>
+                <div className="btn bg-neutral-700" onClick={onRequestClose}>Back</div>
             </div>
         </div>
        
