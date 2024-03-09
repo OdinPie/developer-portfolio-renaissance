@@ -9,7 +9,7 @@ const TouchingHands = () => {
     return (
         <div id="contact" className="pt-52 pb-32">
             <motion.div className="text-center"
-            initial={{opacity:0}} 
+            initial={{opacity:0}}
             whileInView={{opacity:1}} transition={{delay:2.5}}>
                 <h1 className='font-TulpenOne text-textPrimary font-bold text-7xl'>Let's get Connected</h1>
             </motion.div>

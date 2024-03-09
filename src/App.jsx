@@ -4,15 +4,12 @@ import currentTime from '../src/Components/currentTime';
 import { useState } from "react";
 import Home from "./Home/Home";
 import Hidden from "./Home/Hidden";
-import About from "./About/About";
+import {Planets} from 'react-preloaders';
 import Projects from "./Projects/Projects";
 import TouchingHands from "./TouchingHands/TouchingHands";
 function App() {
-  const [date,month] = currentTime();
-  const [hovering, setHovering] = useState(false);
 
   return (
-    // <div className="app text-textPrimary">
     <div>
       <AnimatedCursor
       innerSize={8}
@@ -31,6 +28,7 @@ function App() {
       <Home></Home>
       <Projects></Projects>
       <TouchingHands></TouchingHands>
+      <Planets  background="linear-gradient(180deg,  #FFC0CB 0%, #8E7AB5 100%)"></Planets>
     </div>
   )
 }

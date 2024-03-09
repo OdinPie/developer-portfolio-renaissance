@@ -13,7 +13,7 @@ body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  animation: clipPath 2s;
+  animation: clipPath 1s;
   transition: ease-in-out 2s ;
   z-index: 1;
 }
@@ -40,8 +40,8 @@ body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  animation: clipPathReverse 2s forwards;
-  transition: ease-in-out 2s ;
+  animation: clipPathReverse 1s forwards;
+  transition: ease-in-out 0.5s ;
 }
 
 html{
